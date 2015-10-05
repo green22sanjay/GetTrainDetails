@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/searchtable"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:background="@color/md_white_1000"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_column="1"
+            android:layout_span="1"
+            android:src="@drawable/ic_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_column="2"
+            android:layout_span="0"
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/pickyoursource"
+                android:textColor="@color/md_blue_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick your Destination"
+                />
+            <TextView
+                android:id="@+id/yoursource"
+                android:textColor="@color/md_grey_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                />
+
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>
